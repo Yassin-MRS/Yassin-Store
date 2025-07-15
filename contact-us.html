@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Yassin Store</title>
+    <link rel="stylesheet" href="CSS.css">
+    <style>
+        /* CSS بسيط لتنسيق نموذج الاتصال، يمكنك نقله لملف CSS.css إذا أردت */
+        .contact-form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box; /* لضمان أن الـ padding لا يزيد العرض الكلي */
+        }
+
+        .contact-form textarea {
+            resize: vertical; /* للسماح للمستخدم بتغيير حجم مربع النص عموديًا */
+            min-height: 100px;
+        }
+
+        .contact-form button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .contact-form button:hover {
+            background-color: #555;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e9e9e9;
+            border-radius: 8px;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Yassin Store</h1>
+        <nav>
+            <ul>
+                <li><a href="Yassin Store.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <p>Have a question or need assistance? Fill out the form below, and we'll get back to you as soon as possible.</p>
+            <form action="#" method="POST"> <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section class="contact-info">
+            <h2>Our Contact Information</h2>
+            <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+            <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+            <p><strong>Email:</strong> info@yassinstore.com</p>
+            <p><strong>Business Hours:</strong> Monday - Friday: 9:00 AM - 6:00 PM</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Yassin Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
